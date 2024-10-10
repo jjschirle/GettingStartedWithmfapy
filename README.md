@@ -39,7 +39,9 @@ Say you want to download the mfapy source code to the `Source_Code` folder. You'
 - Say you want the folder for your metabolite analysis in your `Projects` folder. I would create the `Awesome_Metabolite_Analysis` as a subdirectory in `Projects`, then open VSCode, select the open folder option, and then select `../Projects/Awesome_Metabolite_Analysis`.
 
 ## A note on virtual environments (optional)
-A **virtual environment** is a tool that allows you to create isolated environments for your projects. Essentially, if you want to work with `pandas` dataframes, you can install pandas to your *global* environment (any time you attempt to use pandas it may try to use whatever version you have here), or you can install it into your *virtual environment*. When you import pandas, this time it will import the version you have installed, ensuring no dependency issues as packages update when you try to run this code in a couple years. It's extra work, but it's good practice to avoid conflicts.
+A **virtual environment** is a tool that allows you to create isolated environments for your projects. Essentially, if you want to work with `pandas` dataframes, you can install pandas to your *global* environment (any time you attempt to use pandas it may try to use whatever version you have here).
+
+Alternatively, you can install it into your *virtual environment*. When you import pandas, this time it will import the version you have installed in your `venv`, ensuring no dependency issues as packages update when you try to run this code in a couple years. It's extra work, but it's good practice to avoid conflicts.
 
 ### Creating a virtual environment
 - Once you've opened your `Awesome_Metabolite_Analysis` folder in VSCode, open the terminal in VSCode (click terminal in the top panel, then 'new terminal'). You can create a virtual environment by typing `python3 -m venv venv` in your VSCode terminal. 
